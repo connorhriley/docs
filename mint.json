@@ -40,17 +40,17 @@
     {
       "name": "Minecraft",
       "icon": "pickaxe",
-      "url": "https://mintlify.com/community"
+      "url": "minecraft"
     },
     {
       "name": "Rust",
       "icon": "radiation",
-      "url": "https://mintlify.com/blog"
+      "url": "rust"
     },
     {
       "name": "Virtual Servers",
       "icon": "server",
-      "url": "https://mintlify.com/blog"
+      "url": "virtual-servers"
     }
   ],
   "navigation": [
