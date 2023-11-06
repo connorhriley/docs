@@ -72,16 +72,20 @@ Press Add Record and set the following credentials:
 - TTL: `Auto`
 - Proxy status (if available): `DNS Only`
   </Tab>
-  <Tab title="Shared IP">
-- Type: `C`
-- Name: Set this to the subdomain you want to use (play, mc). If you are using Shared - IP (if it requires a port) then set the subdomain to something else because we will need to use it in SRV Record.
-- IPv4 address: Set this to you IP Address without the port.
+  <Tab title="No Dedicated IP">
+- Type: `SRV`
+- Name: Set this to a subdomain you want to use to connect to your server. This must be unique to the one you used an A record. If you want to not have a subdomain and connect straight to the domain, set it to @. The name set in A record will only be used by the SRV record and can be set to any name.
+- Service: `_minecraft`
+- Protocol: `TCP`
 - TTL: `Auto`
-- Proxy status (if available): `DNS Only`
+- Priority: `0`
+- Weight: `0`
+- Port: Set this to your IP address's port.
+- Target: Set this to the subdomain you set in A record earlier (in our example, we've set it to connect, the domain is example.com. So we will use connect.example.com).
   </Tab>  
 </Tabs>
 
-Hello
+Once you have completed the necessary steps, you are ready to go! You will now be able to establish a connection with your server by utilizing the subdomain specified in the SRV record, along with your domain name (for instance, `play.example.com` in our example).
 
 ## Datapacks
 
