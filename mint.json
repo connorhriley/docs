@@ -38,15 +38,20 @@
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
-      "icon": "slack",
+      "name": "Minecraft",
+      "icon": "pickaxe",
       "url": "https://mintlify.com/community"
     },
     {
-      "name": "Blog",
+      "name": "Rust",
       "icon": "newspaper",
       "url": "https://mintlify.com/blog"
-    }
+    },
+    {
+      "name": "Virtual Servers",
+      "icon": "newspaper",
+      "url": "https://mintlify.com/blog"
+    }   
   ],
   "navigation": [
     {
