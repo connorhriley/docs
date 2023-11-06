@@ -49,13 +49,13 @@
     },
     {
       "name": "Virtual Servers",
-      "icon": "newspaper",
+      "icon": "server",
       "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
         "introduction",
         "quickstart",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Billing",
       "pages": [
         "essentials/markdown",
         "essentials/code",
