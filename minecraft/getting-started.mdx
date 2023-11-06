@@ -7,4 +7,16 @@ description: 'This is an extensive guide for new server owners to get started wi
 
 In Vanilla Minecraft, there are a set of fundamental administrative commands available for managing player access to your server. These commands can serve as warning systems or enable you to remove problematic players from your community. To execute these commands, you will need to provide the username of the player in the designated space. The first command, "`/kick`", allows you to kick a player out of the server. This will immediately remove them from the game. The second command, "`/ban`", enables you to ban a player from the server. Once banned, they will be unable to join unless you choose to un-ban them. To un-ban a player, you can use the command "`/pardon`".
 
-Additionally, you have the option to ban a player's IP address. This means that even if the player attempts to access the server using a different account on the same network, they will still be unable to join. To accomplish this, you can utilize the command "`/ban-ip`". Should you wish to reverse the ban on a player's IP, you can use the command "`/pardon-ip`".
+Additionally, you have the option to ban a player's IP address. This means that even if the player attempts to access the server using a different account on the same network, they will still be unable to join. To accomplish this, you can utilize the command "`/ban-ip`". Should you wish to reverse the ban on a player's IP, you can use the command "`/pardon-ip`"
+
+### Gamemode
+
+To modify the gamemode of an individual, simply employ the command `/gamemode` followed by the desired gamemode: survival, creative, adventure, or spectator. Also, remember to substitute "player's in-game name" with the actual name of the player.
+
+### Whitelisting
+
+A whitelist is a useful feature that allows you to specify which players are allowed to join your servers, while restricting others who are not on the whitelist from joining. To activate the whitelist, simply enter the command `/whitelist` on once your server is online. If you wish to add a player to the whitelist, use the command `/whitelist add` followed by the player's in-game name. Conversely, if you want to remove a player from the whitelist, utilize the command `/whitelist remove` followed by the player's name. Lastly, to deactivate the whitelist, enter the command `/whitelist off`.
+
+If you wish to grant a player access to commands and operator status, you can do so by using the command `/op` followed by the player's in-game name. Conversely, if you want to remove operator status from a player, simply enter the command `/deop `followed by the player's name.
+
+<Tip>Spigot-based servers strongly discourage the utilization of OP as it grants players access to potentially unsafe commands. Instead, employ a permissions plugin such as LuckPerms to assign the necessary permissions to your staff.</Tip>
