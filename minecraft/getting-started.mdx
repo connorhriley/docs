@@ -66,22 +66,22 @@ Press Add Record and set the following credentials:
 
 <Tabs>
   <Tab title="Dedicated IP">
-- Type: `A`
-- Name: Set this to the subdomain you want to use (play, mc). If you are using Shared - IP (if it requires a port) then set the subdomain to something else because we will need to use it in SRV Record.
-- IPv4 address: Set this to you IP Address without the port.
-- TTL: `Auto`
-- Proxy status (if available): `DNS Only`
+    - Type: A
+    - Name: Set this to the subdomain you want to use (e.g., play, mc). If you are using a shared IP (and it requires a port), then set the subdomain to something else because we will need to use it in the SRV Record.
+    - IPv4 address: Set this to your IP Address without the port.
+    - TTL: Auto
+    - Proxy status (if available): DNS Only
   </Tab>
   <Tab title="No Dedicated IP">
-- Type: `SRV`
-- Name: Set this to a subdomain you want to use to connect to your server. This must be unique to the one you used an A record. If you want to not have a subdomain and connect straight to the domain, set it to @. The name set in A record will only be used by the SRV record and can be set to any name.
-- Service: `_minecraft`
-- Protocol: `TCP`
-- TTL: `Auto`
-- Priority: `0`
-- Weight: `0`
-- Port: Set this to your IP address's port.
-- Target: Set this to the subdomain you set in A record earlier (in our example, we've set it to connect, the domain is example.com. So we will use connect.example.com).
+    - Type: SRV
+    - Name: Set this to a subdomain you want to use to connect to your server. This must be unique compared to the one you used in the A record. If you want to connect directly to the domain, set it to '@'. The name set in the A record will only be used by the SRV record and can be set to any name.
+    - Service: _minecraft
+    - Protocol: TCP
+    - TTL: Auto
+    - Priority: 0
+    - Weight: 0
+    - Port: Set this to your IP address's port.
+    - Target: Set this to the subdomain you set in the A record earlier (in our example, we've set it to 'connect', and the domain is example.com. So, we will use 'connect.example.com').
   </Tab>  
 </Tabs>
 
