@@ -40,7 +40,7 @@
     {
       "name": "Minecraft",
       "icon": "pickaxe",
-      "url": "minecraft/getting-started.mdx"
+      "url": "https://citrusnode.mintlify.app/minecraft/getting-started"
     },
     {
       "name": "Rust",
