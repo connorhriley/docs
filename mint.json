@@ -40,7 +40,7 @@
     {
       "name": "Minecraft",
       "icon": "pickaxe",
-      "url": "minecraft"
+      "url": "minecraft/getting-started.mdx"
     },
     {
       "name": "Rust",
