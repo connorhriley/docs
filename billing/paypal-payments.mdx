@@ -1,66 +1,26 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
-icon: 'map'
+title: 'PayPal Payments'
+description: 'A PayPal Billing Agreement authorizes us to automatically charge your PayPal account for the services associated with your account, similar to the billing process with a Credit Card. This ensures the seamless continuation of your services, sparing you the inconvenience of managing PayPal Subscriptions for tasks such as upgrades, downgrades, and cancellations.'
+icon: 'paypal'
 ---
 
-The navigation menu is the list of links on every website.
+### PayPal Subscriptions
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+A PayPal Subscription is an automated payment arrangement created to make periodic payments of a specific amount at predefined intervals. If you opted for a subscription during your service activation, your account will automatically initiate payments according to the service interval you selected (Monthly, Quarterly, Semi-Annually, or Annually). This feature guarantees uninterrupted service, eliminating the need for manual invoice payments.
 
-## Navigation syntax
+### Cancelling Billing Agreements
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
-
-<CodeGroup>
-
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
-
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `mint.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+1. Log in to your PayPal account.
+2. Click Profile (the gear icon) on the top right corner of the page.
+3. Click Pre-approved payments under "Payment settings".
+4. Select the merchant whose agreement you want to cancel, and click Cancel.
+5. Follow the provided instructions to complete the cancellation of the agreement.
 
 <Warning>
 
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
+If you don’t have access to your PayPal account, you should contact us directly to cancel the agreement.
 
 </Warning>
 
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
+https://www.paypal.com/sm/smarthelp/article/how-do-i-cancel-a-recurring-payment,-subscription,-or-automatic-billing-agreement-i-have-with-a-merchant-faq1067
 
-## Hidden Pages
-
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
