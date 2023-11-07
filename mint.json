@@ -35,7 +35,7 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": ""
+      "url": "introduction.mdx"
     },
     {
       "name": "Discord",
@@ -52,9 +52,7 @@
     {
       "group": "Getting Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "introduction"
       ]
     },
     {
