@@ -56,6 +56,12 @@
       ]
     },
     {
+      "group": "Minecraft",
+      "pages": [
+        "minecraft/getting-started.mdx"
+      ]
+    },    
+    {
       "group": "Billing",
       "pages": [
         "billing/paypal-payments"
