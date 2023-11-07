@@ -33,24 +33,19 @@
   ],
   "anchors": [
     {
-      "name": "Docs",
+      "name": "Documentation",
       "icon": "book-open-cover",
       "url": "introduction.mdx"
     },
     {
-      "name": "Minecraft",
-      "icon": "pickaxe",
-      "url": "/minecraft/getting-started"
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/UTmtWYMfae"
     },
     {
-      "name": "Rust",
-      "icon": "radiation",
-      "url": "/rust/"
-    },
-    {
-      "name": "Virtual Servers",
-      "icon": "server",
-      "url": "virtual-servers"
+      "name": "Contact Us",
+      "icon": "envelope",
+      "url": "https://citrusnode.com/support"
     }
   ],
   "navigation": [
