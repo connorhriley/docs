@@ -58,9 +58,9 @@
     {
       "group": "Minecraft",
       "pages": [
-        "minecraft/getting-started.mdx"
+        "minecraft/getting-started"
       ]
-    },    
+    },
     {
       "group": "Billing",
       "pages": [
