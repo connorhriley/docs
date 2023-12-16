@@ -52,12 +52,6 @@
     {
       "group": "Minecraft",
       "pages": [
-        "minecraft/getting-started"     
-      ]
-    },
-    {
-      "group": "Minecraft",
-      "pages": [
         "minecraft/getting-started",
         {
           "group": "Plugins",
