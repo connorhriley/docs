@@ -56,7 +56,7 @@
         {
           "group": "Plugins",
           "pages": [
-            "minecraft/plugins/installing-plugins"
+            "integrations/analytics/overview"
           ]
         },
         {
@@ -83,6 +83,12 @@
             "integrations/analytics/overview"
           ]
         }                
+      ]
+    },    
+    {
+      "group": "Rust",
+      "pages": [
+        "rust/"
       ]
     },    
     {
