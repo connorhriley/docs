@@ -62,6 +62,42 @@
       ]
     },
     {
+      "group": "Minecraft",
+      "pages": [
+        "minecraft/getting-started",
+        {
+          "group": "Plugins",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        },
+        {
+          "group": "Editions",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        },   
+        {
+          "group": "Security",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        },
+        {
+          "group": "Installing Modpacks",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        },    
+        {
+          "group": "Server Optimisations",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        }                
+      ]
+    },    
+    {
       "group": "Billing",
       "pages": [
         "billing/paypal-payments"
