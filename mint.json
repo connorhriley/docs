@@ -50,12 +50,6 @@
   ],
   "navigation": [
     {
-      "group": "Getting Started",
-      "pages": [
-        "introduction"
-      ]
-    },
-    {
       "group": "Minecraft",
       "pages": [
         "minecraft/getting-started"     
