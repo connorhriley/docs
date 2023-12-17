@@ -80,7 +80,7 @@
         {
           "group": "Server Optimisations",
           "pages": [
-            "minecraft/Server-Optimisations/aikar-flags"
+            "minecraft/server-optimisations/aikar-flags"
           ]
         }                
       ]
