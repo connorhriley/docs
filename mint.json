@@ -94,7 +94,9 @@
     {
       "group": "Billing",
       "pages": [
-        "billing/paypal-payments"
+        "billing/paypal-payments",
+        "billing/requesting-a-refund"
+
       ]
     },
     {
