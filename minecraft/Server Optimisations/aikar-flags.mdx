@@ -1,0 +1,27 @@
+---
+title: 'Aikar's Flags'
+description: 'Aikar Flags are currently the most optimised and tested startup flags for Minecraft. As such they are recommended for newer versions of the game, modded servers, and public servers.'
+---
+
+If you have a Game or Minecraft server with us. These flags are applied should be applied by default. If they aren not then navigate to the Startup tab and toggle the button. 
+
+
+## Applying the Flags
+
+If you're running a Citrus Slice (VPS) you without our panel addon included, you will need to apply the flags to your server. If you're using Pterodactyl you'll need to make sure you step down the RAM values, so you leave room for Java to run. Here are 2 examples.
+
+### Under 12GB of RAM
+
+If your server is using under 12gb of RAM, then these are the flags you should use.
+
+`java -Xms11G -Xmx11G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui`
+
+<Tip>Note: Change the RAM value to the amount of RAM your server has!</Tip>
+
+### Over 12GB of RAM
+
+If you’re using 12gb of RAM or more, then some changes are needed.
+
+`java -Xms12G -Xmx12G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=40 -XX:G1MaxNewSizePercent=50 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=15 -XX:InitiatingHeapOccupancyPercent=20 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui`
+
+<Tip>Note: Change the RAM value to the amount of RAM your server has!</Tip>
