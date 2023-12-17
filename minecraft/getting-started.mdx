@@ -1,5 +1,5 @@
 ---
-title: 'Running your Server'
+title: 'Running a Server'
 description: 'This is an extensive guide for new server owners (and existing) to get started with running their Minecraft Server'
 icon: 'rocket-launch'
 ---
@@ -10,11 +10,28 @@ In Vanilla Minecraft, there are a set of fundamental administrative commands ava
 
 Additionally, you have the option to ban a player's IP address. This means that even if the player attempts to access the server using a different account on the same network, they will still be unable to join. To accomplish this, you can utilize the command "`/ban-ip`". Should you wish to reverse the ban on a player's IP, you can use the command "`/pardon-ip`"
 
+### Adding a Server Icon
+
+Adding a server icon is an importing step in creating your server and helping players find yours in the serverlist.
+
+1. Firstly your icon must be 64×64 pixels in size, it must be named `server-icon` and in a `.PNG` format.
+2. You can then stop your server via the control panel.
+3. Once the server is stopped head to the **file manager**. 
+4. You can then upload your `server-icon.png` and restart your server.
+
+Congratulations! Your server now has the icon of your choosing.
+
+### Changing your MOTD
+
+MOTD's are the fancy text you will see on the server list, it's a great way of displaying events or other information to players.
+
+You may use a tool like [this one]{https://mctools.org/motd-creator}, copy it directly to `server-properties`. If you have set it up correctly then following a restart the server will update automatically.
+
 ### Gamemode
 
 To modify the gamemode of an individual, simply employ the command `/gamemode` followed by the desired gamemode: survival, creative, adventure, or spectator. Also, remember to substitute "player's in-game name" with the actual name of the player.
 
-### Whitelisting
+### Setting up a whitelist
 
 A whitelist is a useful feature that allows you to specify which players are allowed to join your servers, while restricting others who are not on the whitelist from joining. To activate the whitelist, simply enter the command `/whitelist` on once your server is online. If you wish to add a player to the whitelist, use the command `/whitelist add` followed by the player's in-game name. Conversely, if you want to remove a player from the whitelist, utilize the command `/whitelist remove` followed by the player's name. Lastly, to deactivate the whitelist, enter the command `/whitelist off`.
 
@@ -22,7 +39,9 @@ If you wish to grant a player access to commands and operator status, you can do
 
 <Tip>Spigot-based servers strongly discourage the utilization of OP as it grants players access to potentially unsafe commands. Instead, employ a permissions plugin such as LuckPerms to assign the necessary permissions to your staff.</Tip>
 
-## Uploading your World
+## World Management
+
+### Uploading your World
 
 To accomplish this, you can compress the entirety of the world into a zip file and subsequently upload it using a specific method. It is important to ensure that the size of the compressed world file is below 100MB. In case the file exceeds this limit, it is recommended to employ SFTP (Secure File Transfer Protocol) for uploading the world.
 
@@ -33,6 +52,18 @@ To accomplish this, you can compress the entirety of the world into a zip file a
 If your world exceeds 100MB in size, it is advisable to use SFTP to upload your world file.
 
 If you happen to have folders labeled as `world_nether` and `world_the_end`, it is advisable to upload them aswell.
+
+### Resetting your World
+
+Firstly either navigate to your server's files either through SFTP or our Control panel.
+
+<Warning>Any steps from here will result in a complete wipe of your world and all it's contents. Proceed with caution.</Warning>
+
+Once you have taken any necessery backups, you locate the world directories within your servers files. By default they will be called world, world_nether, and world_the_end. 
+
+Select which of the world(s) that yu wish to reset and click the three dots on the right or right click. Then click the **delete** button.
+
+Once they have been deleted you can restart your server. If you accidently delete the wrong world you may be able to recover it from the recycle bin.
 
 ## Using Plugins
 
@@ -90,6 +121,6 @@ Once you have completed the necessary steps, you are ready to go! You will now b
 
 ## Datapacks
 
-When adding a datapack into your server, you must first navigate to the **File Manager** tab and access the `world` folder. Within this folder, you will discover a designated directory named datapacks. Open this directory to proceed with the upload process. You can either drag and drop the desired datapack into the folder or use the `Upload` button located on the left side.
+When adding a datapack into your server, you must first navigate to the **File Manager** tab and access the `world` folder. Within this folder, you will discover a designated directory named **/datapacks/. Open this directory to proceed with the upload process. You can either drag and drop the desired datapack into the folder or use the `Upload` button.
 
 Some datapacks, such as ones from VanillaTweaks, `.zip` files might have "unzip me" in their name. This is a note from the creator that you need to unzip the file before using it in the world.
