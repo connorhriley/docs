@@ -3,12 +3,20 @@ title: 'Aikar's Flags'
 description: 'Aikar Flags are currently the most optimised and tested startup flags for Minecraft. As such they are recommended for newer versions of the game, modded servers, and public servers.'
 ---
 
-If you have a Game or Minecraft server with us. These flags are applied should be applied by default. If they aren not then navigate to the Startup tab and toggle the button. 
+If you have a Game or Minecraft server with us. These flags are applied should be applied by default. If they are not then navigate to the Startup tab and toggle the option. 
 
 
 ## Applying the Flags
 
 If you're running a Citrus Slice (VPS) you without our panel addon included, you will need to apply the flags to your server. If you're using Pterodactyl you'll need to make sure you step down the RAM values, so you leave room for Java to run. Here are 2 examples.
+
+### Understanding Overhead
+
+Each server is allocated a predetermined maximum amount of RAM, and your server will utilize this limit to its fullest extent. However, when initiating a Minecraft server, it's not the sole process in operation. The Java Runtime Environment (JRE) comes into play, interpreting the code Minecraft is built upon and handling many background tasks to manage its resources efficiently. The JRE is essential for launching the server jar, and any disruptions to its operation can negatively impact the server's performance, potentially leading to crashes.
+
+This issue is prevalent across various computing tasks, resulting in what is known as overhead—a reserve of resources designated for other tasks to prevent interference with a resource-intensive task. In this context, the Minecraft Server assumes the role of the "greedy" task, and without allocating a portion of the RAM specifically for the JRE, it may impede the JRE's functionality.
+
+To prevent issues such as server slowdowns and crashes, we employ Aikar’s flags to strike a balance between the Minecraft Server and the JRE, determining an optimal level of overhead. This approach ensures that the JRE receives adequate resources, preventing potential disruptions. For plans that are anticipated to have higher resource demands, we allocate 1.5GB of overhead to accommodate potential requirements.
 
 ### Under 12GB of RAM
 
@@ -25,3 +33,11 @@ If you’re using 12gb of RAM or more, then some changes are needed.
 `java -Xms12G -Xmx12G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -XX:G1NewSizePercent=40 -XX:G1MaxNewSizePercent=50 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=15 -XX:InitiatingHeapOccupancyPercent=20 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui`
 
 <Tip>Note: Change the RAM value to the amount of RAM your server has!</Tip>
+
+### Allocating correctly
+
+Initially, avoid allocating all available memory to your systems. The provided startup settings utilize the entire allocated memory, meaning that if you have a 14GB system and assign the full 14GB, no memory remains for other concurrent processes on the system. This advice is applicable to users employing the Pterodactyl panel as well.
+
+When configuring the RAM value, it is advisable to set it slightly below your system's total RAM. For optimal performance and to allow room for other system processes, consider setting the RAM value 1GB below the total system RAM.
+
+<Warning>It’s common for people to think that giving more RAM to your server will solve all your problems. However this often can at best not solve any issues, and at worse, make the server crash more frequently.</Warning>
