@@ -11,6 +11,8 @@ We are always open to suggestions for new modpacks we should add, if you have an
 
 ## Installing a CurseForge Modpack
 
+### Manual Upload
+
 When installing a Modpack, you will need to find which one you wish to install. You will notice that a Modpack's files/download will be listed on a variety of different sites but we recommend sticking to the multiplayer tab of the CurseForge website [here](https://www.curseforge.com/minecraft/modpacks/multiplayer). Modpacks not within the multiplayer category may not have a server pack version, and you will need to create the server pack yourself.
 
 You will find the modpacks server files in the **Additional Files** page when you select the version you wish. 
@@ -22,6 +24,8 @@ You can then download the files locally to your PC, please then extract the file
 <Warning>For server packs that do not include Forge by default, there are two scenarios. First, if the server pack already has Forge installed, or it prompts you to execute a .bat file, you can simply upload the files to your server and initiate it using the Forge .jar (not the one labeled minecraft_server.jar).</Warning>
 
 <Warning>On the other hand, if the server pack lacks Forge installation or a dedicated Forge installer, it likely provides a .bat file to facilitate file downloads. In this case, clicking on the .bat initiates the download of necessary files. Afterward, you can proceed to follow the remaining steps in this tutorial to transfer the files to your Citrus server and commence its operation.</Warning>
+
+#### Running the Forge Installer
 
 Once the Forge installer has started you will be presented with the following options:
 
@@ -35,5 +39,26 @@ Then, modify the target directory by using the highlighted box. While the instal
 
 Please ensure that you are aware of the directory's location for easy access in the next steps.
 
-You can then 
+Now click on the "Ok" button to start the installation. This process can take a few seconds while all the files are downloaded.
+
+Once the Forge installation is successfully completed, proceed to choose all the files within the directory and compress them. We advise to use a tool such as 7Zip for this task, as the default compression option in Windows may not be compatible with the panel.
+
+#### Uploading the modpack
+
+You will now need to compress the folder so we can upload it to the Control Panel. 
+
+<Warning>Remember to delete all the current server's files in the Control Panel **before** uploading.</Warning>
+
+Once you have compressed the folder and deleted the current server files, upload the `.zip` click the `...` and **Unarchive**. 
+
+You can now start the server, remember to change the `.jar` file in the startup tab to avoid crashing. 
+
+<Tip>Certain servers may not label their `.jar` file as "Forge." In such instances, the `.jar` might be named after the modpack, such as `jurassic_reborn.jar.` Simply choose that specific `.jar` to initiate the server.</Tip>
+
+<Warning>Never opt for the `.jar` named `Minecraft_server.jar`, even if it includes the version number in its name. This particular `.jar` triggers the launch of a Vanilla server, necessitating a reinstallation of the server pack</Warning>
+
+You will then need to accept the EULA, and there you go! You have sucesfully installed your server pack. 
+
+
+
 
