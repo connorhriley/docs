@@ -126,6 +126,23 @@ Once you have completed the necessary steps, you are ready to go! You will now b
 
 ## Datapacks
 
-When adding a datapack into your server, you must first navigate to the **File Manager** tab and access the `world` folder. Within this folder, you will discover a designated directory named **/datapacks/. Open this directory to proceed with the upload process. You can either drag and drop the desired datapack into the folder or use the `Upload` button.
+Datapacks are `.zip` files that you can use to enhance your experience without installing Mods. Installing one is simple, once you have downloaded the datapack you want to head over to your File manager. Find the `world` dorectory. Within this folder, you will discover a designated directory named `/datapacks/`. 
 
-Some datapacks, such as ones from VanillaTweaks, `.zip` files might have "unzip me" in their name. This is a note from the creator that you need to unzip the file before using it in the world.
+Open this to proceed with the upload process. You can either drag and drop the desired datapack into the folder or use the **Upload** button.
+
+## Resource Packs
+
+To install a server-wide resource pack on your Minecraft server, follow these steps. 
+
+1. Start by selecting a resource pack compatible with your server's Minecraft version. Access your server files, and create a folder named "resourcepacks" in the server's directory if it doesn't exist. 
+2. Upload your chosen resource pack in the `.zip` format to this folder.
+3. Open the "`server.properties`" file and locate the line starting with "`resource-pack=`", and add the URL or relative path to your resource pack.
+4. Save the changes, restart the server, and players will automatically download and use the resource pack when connecting. 
+
+Optionally, for more reliability in updating the resource pack, you can include the SHA1 checksum of your selected resource pack. This ensures that clients can update the pack seamlessly, even if the filename remains unchanged. 
+
+To obtain the SHA1 checksum, execute certUtil -hashfile \path\to\file SHA1 on Windows or shasum /path/to/file on Mac or Linux. Alternatively, you can utilize emn178's online SHA1 checksum checker. Once obtained, update it to `resource-pack-sha1=` on the second-to-last line of the `server.properties` file.
+
+
+
+
