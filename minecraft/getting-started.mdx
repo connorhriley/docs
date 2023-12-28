@@ -87,6 +87,30 @@ Below is our list of plugins that can be beneficial for any type of server. Whil
 3. **LuckPerms** is widely regarded as the go-to permissions plugin for most servers. By utilizing LuckPerms, you can restrict the permissions to use plugins only to specific players, thereby enhancing the security of your server.
 4. **BungeeGuard** is an intra-network authorization plugin that prevents unauthorized players from accessing your backend servers if they have not joined through your BungeeCord proxy. Installing BungeeGuard can further safeguard your server from potential threats.
 
+## Spark
+
+Spark is a performance profiling plugin (with limited availability for Forge and Fabric) that can display server information, such as TPS, memory, tick durations, CPU usage, and disk usage. But more importantly it can create a performance profile that can be viewed on a fully feature web interface. It does not require any configuration and is incredibly easy to install.
+
+### Spark Profiles
+
+The profiler function, initiated by the command `/spark profiler start`, is a highly effective diagnostic tool. It is recommended to execute the profiling during periods of server stress for optimal results. 
+
+To maximize the report's accuracy, allow the profiler to run continuously for at least 10 minutes. Further customization can be achieved by incorporating additional parameters, with detailed instructions available in the Spark Documentation.
+
+When ready to examine the profiler results, run the command `/spark profiler stop` and capture the generated link. Upon opening the link, you will find a user-friendly web interface with a comprehensive display of all the data.
+
+### Timings Reports
+
+Takin a Timings report is a critical step in diagnosing and optimizing the performance of a Minecraft server. 
+
+To take a timings report, you can use the `/timings` command. This report provides detailed insights into how the server is utilizing its resources, enabling server admins to identify potential bottlenecks and areas for improvement.  
+
+Once the `/timings` command is running, the server collects data for a specified period, usually recommended during times of high server activity or stress. 
+
+After the data collection period, the `/timings` report command can be used to generate a summary of the server's performance.  
+
+Regularly obtaining Timings reports is a best practice to ensure the smooth operation of the Minecraft server.
+
 ## Networking
 
 ### Different IPs
