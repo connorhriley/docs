@@ -72,15 +72,15 @@
           ]
         },
         {
-          "group": "Installing Modpacks",
+          "group": "Modded Servers",
           "pages": [
-            "integrations/analytics/overview"
+            "minecraft/modded-servers/test.mdx"
           ]
         },    
         {
           "group": "Server Optimisations",
           "pages": [
-            "minecraft/Server-Optimisations/aikar-flags"
+            "minecraft/Server-Optimisations/aikar-flags.mdx"
           ]
         }                
       ]
