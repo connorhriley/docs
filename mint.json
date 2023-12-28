@@ -54,38 +54,32 @@
       "pages": [
         {
           "group": "Editions",
-          "pages": [
-            "minecraft/editions/installing-fabric",
-            "minecraft/editions/installing-forge"
-          ]
+          "page": "minecraft/editions/installing-fabric"
+        },
+        {
+          "group": "Editions",
+          "page": "minecraft/editions/installing-forge"
         },
         {
           "group": "Modded Servers",
-          "pages": [
-            "minecraft/modded-servers/test"
-          ]
-        }  
+          "page": "minecraft/modded-servers/test"
+        }
       ]
-    },    
+    },
     {
       "group": "Rust",
-      "pages": [
-        "rust/"
-      ]
-    },    
+      "page": "rust/"
+    },
     {
       "group": "Billing",
       "pages": [
         "billing/paypal-payments",
         "billing/requesting-a-refund"
-
       ]
     },
     {
       "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
+      "page": "api-reference/introduction"
     },
     {
       "group": "Endpoint Examples",
