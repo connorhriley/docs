@@ -50,21 +50,39 @@
   ],
   "navigation": [
     {
-      "group": "Configurations",
+      "group": "Minecraft",
       "pages": [
+        "minecraft/getting-started",
         {
           "group": "Editions",
           "pages": [
-            "minecraft/editions/installing-fabric",
-            "minecraft/editions/installing-forge"
+            "minecraft/Editions/installing-fabric"
           ]
-        },
+        },  
         {
           "group": "Modded Servers",
           "pages": [
             "minecraft/modded-servers/test"
           ]
-        }  
+        },           
+        {
+          "group": "Plugins",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        }, 
+        {
+          "group": "Security",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        }, 
+        {
+          "group": "Server Optimisations",
+          "pages": [
+            "minecraft/Server-Optimisations/aikar-flags"
+          ]
+        }                
       ]
     },    
     {
