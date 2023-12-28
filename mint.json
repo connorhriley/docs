@@ -63,9 +63,9 @@
         {
           "group": "Modded Servers",
           "pages": [
-            "minecraft/Modded-Servers/test"
+            "minecraft/modded-servers/installing-a-modpack"
           ]
-        },           
+        },         
         {
           "group": "Plugins",
           "pages": [
