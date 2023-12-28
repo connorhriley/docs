@@ -54,29 +54,29 @@
       "pages": [
         "minecraft/getting-started",
         {
-          "group": "Plugins",
-          "pages": [
-            "integrations/analytics/overview"
-          ]
-        },
-        {
           "group": "Editions",
           "pages": [
             "minecraft/Editions/installing-fabric"
           ]
         },   
         {
+          "group": "Modded-Servers",
+          "pages": [
+            "minecraft/modded-servers/test"
+          ]
+        },  
+        {
+          "group": "Plugins",
+          "pages": [
+            "integrations/analytics/overview"
+          ]
+        },                  
+        {
           "group": "Security",
           "pages": [
             "integrations/analytics/overview"
           ]
         },
-        {
-          "group": "Modded Servers",
-          "pages": [
-            "minecraft/modded-servers/test"
-          ]
-        },    
         {
           "group": "Server Optimisations",
           "pages": [
