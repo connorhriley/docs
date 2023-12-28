@@ -74,13 +74,13 @@
         {
           "group": "Modded Servers",
           "pages": [
-            "minecraft/modded-servers/test.mdx"
+            "minecraft/Modded-Servers/test.mdx"
           ]
         },    
         {
           "group": "Server Optimisations",
           "pages": [
-            "minecraft/Server-Optimisations/aikar-flags.mdx"
+            "minecraft/Server-Optimisations/aikar-flags"
           ]
         }                
       ]
