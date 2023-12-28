@@ -56,7 +56,8 @@
         {
           "group": "Editions",
           "pages": [
-            "minecraft/Editions/installing-fabric"
+            "minecraft/Editions/installing-fabric",
+            "minecraft/Editions/installing-forge"            
           ]
         },  
         {
