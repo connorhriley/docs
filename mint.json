@@ -22,8 +22,8 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Control Panel",
+    "url": "https://panel.citrusnode.com"
   },
   "tabs": [
     {
