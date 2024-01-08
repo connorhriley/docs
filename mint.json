@@ -85,13 +85,7 @@
           ]
         }                
       ]
-    },    
-    {
-      "group": "Rust",
-      "pages": [
-        "rust/"
-      ]
-    },    
+    },     
     {
       "group": "Billing",
       "pages": [
